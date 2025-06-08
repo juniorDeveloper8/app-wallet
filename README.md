@@ -1,4 +1,4 @@
-# 📱 Income & Expense Tracker App (Expo + MySQL)
+# 📱 Income & Expense Tracker App (Expo + Express + MySQL)
 
 This project is a mobile app to track income and expenses, built with Expo (React Native) and connected to a Node.js backend with a MySQL database.
 
