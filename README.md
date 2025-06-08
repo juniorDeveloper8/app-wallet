@@ -1,64 +1,42 @@
-# Welcome to your Expo app 👋
+# 📱 Income & Expense Tracker App (Expo + MySQL)
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+This project is a mobile app to track income and expenses, built with Expo (React Native) and connected to a Node.js backend with a MySQL database.
 
-## Get started
+---
 
-0. Run backend 
-  
-``` bash
-  # cd backend 
-  npm run dev
-```
+## 🚀 Prerequisites & Setup
 
-1. Install dependencies
-
-   ```bash
-   npm install
-   ```
-
-2. Start the app
-
-   ```bash
-   npx expo start -c 
-   ```
-
-In the output, you'll find options to open the app in a
-
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
-
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
-
-## Get a fresh project
-
-When you're ready, run:
+Make sure you have Node.js and npm installed. Then install Expo CLI globally and clone the repository:
 
 ```bash
-npm run reset-project
+npm install -g expo-cli
+git clone https://github.com/juniorDeveloper8/app-wallet.git
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+- Note read the readme of the backend project
+- Install backend dependencies and run the server:
 
-## Learn more
+```bash
+cd backend
+npm install
+# config the database
+npm run dev
+```
+- in app execute proyect
 
-To learn more about developing your project with Expo, look at the following resources:
+```bash
+npm install
+npx expo start -c
+```
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+- to log in to this application use gmail, this project uses clerk for security so you have to configure your .env of the project app
 
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
-
-This app is register of income and expenses with integration of database mysql
-
+```bash
+EXPO_PUBLIC_CLERK_PUBLISHABLE_KEY=your key the clerk
+EXPO_PUBLIC_API_URL=your localhost of proyect backend http://localhost(or)yourIp/api
+```
+## Application model
 ![modelo](./doc/app-model.png)
 
-
+## Topics of this application, to change the theme go to the file colors.js in the folder constans
 ![themes](doc/theme-app.png)
